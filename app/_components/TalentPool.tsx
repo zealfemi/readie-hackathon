@@ -1,11 +1,10 @@
-import { FaDotCircle } from "react-icons/fa";
-import RecruitmentHub from "./RecruitmentHub";
 import { FaCircle } from "react-icons/fa6";
+import RecruitmentHub from "./RecruitmentHub";
 
 export default function TalentPool() {
   return (
     <section className="">
-      <div className="px-4 md:px-7 lg:px-14 pt-25 pb-16 flex flex-col gap-5 text-center">
+      <div className="px-4 md:px-7 lg:px-14 pt-25 pb-16 flex flex-col gap-5 text-center justify-center items-center bg-primary-600">
         <p className="text-primary-300 text-sm flex items-center justify-center gap-1.5">
           <FaCircle size={6} /> Two ways to find talent
         </p>

@@ -50,7 +50,7 @@ export default function RecruitmentHub() {
   return (
     <div className="grid lg:grid-cols-2">
       {recruitmentHubData.map((data: recruitmentHubDataType, index) => (
-        <div key={index}>
+        <div key={index} className="border-border first:lg:border-r">
           <FindTalentCardOne data={data} />
         </div>
       ))}
