@@ -1,26 +1,98 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: var(--color-primary-800);
+  --foreground: var(--color-primary-100);
+  --border-color: rgba(238, 234, 251, 0.09);
 }
 
-@theme inline {
+@theme {
+  --color-primary-100: #eeeafb72;
+  --color-primary-200: #f1effa;
+  --color-primary-300: #9a84ff;
+  --color-primary-400: #7d4cff;
+  --color-primary-500: #0d0d21;
+  --color-primary-600: #09091a;
+  --color-primary-700: #0d0d21;
+  --color-primary-800: #060613;
+
+  --color-border: rgba(238, 234, 251, 0.09);
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-inter: var(--font-inter);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter);
+  box-sizing: border-box;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+.radial-bg {
+  background:
+    radial-gradient(
+      62.5% 55.56% at 50% 94.44%,
+      rgba(108, 76, 247, 0.45) 0%,
+      rgba(108, 76, 247, 0) 100%
+    ),
+    #040410;
+
+  background:
+    radial-gradient(
+      50% 41.67% at 100% 0%,
+      rgba(160, 139, 255, 0.28) 0%,
+      rgba(160, 139, 255, 0) 100%
+    ),
+    linear-gradient(126.87deg, #160e4a 0%, #2e1c96 39.29%, #4a31cf 71.43%);
+}
+
+.btn {
+  box-shadow:
+    0px 0px 2px rgba(0, 0, 0, 0.15),
+    inset 0px 2px 4px rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+}
+
+.btn-purple {
+  background-color: var(--color-primary-300);
+}
+
+.plan-1 {
+  background: #0a0a23;
+  border: 1px solid #3b3b4f;
+  box-shadow: inset 0px 0px 4px 1px rgba(255, 255, 255, 0.1);
+  border-radius: 22px;
+}
+
+.plan-2 {
+  background: linear-gradient(180deg, #0a0a23 0%, #272789 100%);
+
+  border: 1px solid #3b3b4f;
+  box-shadow: inset 0px 0px 4px 1px rgba(255, 255, 255, 0.1);
+  border-radius: 22px;
+}
+
+.plan-3 {
+  background: linear-gradient(180deg, #7d4cff 0%, #1f96b4 100%);
+  box-shadow: inset 0px 0px 16px 4px rgba(255, 255, 255, 0.15);
+  border-radius: 22px;
+}
+
+.plan-4 {
+  background: conic-gradient(
+    from -37.3deg at 50% 50%,
+    #595f63 -31.98deg,
+    #cdd8dd 57.6deg,
+    #60676b 154.8deg,
+    #f5f4f9 237.6deg,
+    #dcdfe6 282.81deg,
+    #595f63 328.02deg,
+    #cdd8dd 417.6deg
+  );
+  mix-blend-mode: lighten;
+  border-radius: 22px;
 }
