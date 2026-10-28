@@ -51,7 +51,7 @@ export default function Header() {
 
         {/* Mobile menu */}
         <div
-          className={`fixed inset-0 z-50 p-4 bg-primary-800/95 backdrop-blur-lg transition-all duration-300 ease-in-out ${
+          className={`fixed top-0 w-full h-full z-50 p-4 backdrop-blur-lg transition-all duration-300 ease-in-out ${
             showMenu
               ? "opacity-100 pointer-events-auto translate-y-0"
               : "opacity-0 pointer-events-none -translate-y-full"
@@ -64,7 +64,7 @@ export default function Header() {
             />
           </div>
 
-          <nav className="mt-10 flex flex-col gap-6 text-white text-center w-full font-light capitalize items-center">
+          <nav className="mt-10 flex flex-col gap-6 text-white text-center w-full font-light capitalize">
             <Link
               href="/"
               onClick={() => setShowMenu(false)}

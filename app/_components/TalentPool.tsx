@@ -1,5 +1,6 @@
 import { FaCircle } from "react-icons/fa6";
 import RecruitmentHub from "./RecruitmentHub";
+import TargetedAssessments from "./TargetedAssessments";
 
 export default function TalentPool() {
   return (
@@ -21,6 +22,7 @@ export default function TalentPool() {
       </div>
 
       <RecruitmentHub />
+      <TargetedAssessments />
     </section>
   );
 }
