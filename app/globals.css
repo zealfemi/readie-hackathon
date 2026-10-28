@@ -21,6 +21,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-inter: var(--font-inter);
+  --font-jetbrains: var(--font-jetBrainsMono);
 }
 
 body {
@@ -40,7 +41,9 @@ body {
       rgba(108, 76, 247, 0) 100%
     ),
     #040410;
+}
 
+.radial-bg2 {
   background:
     radial-gradient(
       50% 41.67% at 100% 0%,
