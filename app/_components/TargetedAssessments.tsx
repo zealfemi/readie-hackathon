@@ -118,12 +118,26 @@ export default function TargetedAssessments() {
         imageWidth="lg:w-5/9"
         detailsWidth="lg:w-4/9"
       />
-      <FindTalentCardTwo
-        data={interviewVerificationData}
-        order="image-first"
-        imageWidth="lg:w-8/12"
-        detailsWidth="lg:w-4/12"
-      />
+
+      <div>
+        <div className="bg-primary-600 px-4 lg:px-14 py-10 lg:py-25">
+          <h4 className="text-primary-200 text-[28px] lg:text-[46px] font-semibold">
+            Go beyond what candidates say.
+          </h4>
+
+          <p className="pt-5">
+            Interview inside Readie. The candidate sees an ordinary video call.
+            You see integrity checks on clips sampled through the call, and a
+            full report when it ends.
+          </p>
+        </div>
+        <FindTalentCardTwo
+          data={interviewVerificationData}
+          order="image-first"
+          imageWidth="lg:w-8/12"
+          detailsWidth="lg:w-4/12"
+        />
+      </div>
     </div>
   );
 }
