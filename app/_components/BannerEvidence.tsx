@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Banner, BannerContent, BannerImage } from "./Banner";
 import CardDetailedList, { detailedListType } from "./CardDetailedList";
 import CardDetailedListHeader from "./CardDetailedListHeader";
-import { evidenceData } from "../_data/targetedAssesments";
+import { evidenceData } from "../_data/targetedAssessments";
 
 export default function BannerEvidence() {
   return (

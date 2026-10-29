@@ -1,4 +1,4 @@
-import { targetedAssessmentsList } from "../_data/targetedAssesments";
+import { targetedAssessmentsList } from "../_data/targetedAssessments";
 import { Banner, BannerContent, BannerImage } from "./Banner";
 import CardDetailedList, { detailedListType } from "./CardDetailedList";
 import CardDetailedListHeader from "./CardDetailedListHeader";

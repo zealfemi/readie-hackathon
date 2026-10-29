@@ -10,10 +10,10 @@ A clean, responsive, and component-driven web application built with Next.js, Ty
 - **Styling:** Tailwind CSS
 - **AI Assistance:** Gemini was used to generate a custom Tailwind theme—specifically the color palette for the text and backgrounds—ensuring a cohesive and modern look. Gemini was also utilized to draft and structure the JSON data that populates several components across the app.
 
-I used Gemini to help with the design and content:
+I used Gemini to help with the design colors and content:
 
-- **Tailwind theme:** Gemini helped create the colour theme used for text, backgrounds, accents, and borders. The theme colours are defined in `app/globals.css`.
-- **Data files:** Gemini also helped draft and organise content for some sections. I moved that content into typed TypeScript arrays and objects in `app/_data/` so it is easier to update. These are `.ts` files, not separate `.json` files.
+- **Tailwind theme:** Gemini helped create the color theme used for text, backgrounds, accents, and borders. The theme colors are defined in `app/globals.css`.
+- **Data files:** Gemini also helped draft and organize content for some sections. I moved that content into typed TypeScript arrays and objects in `app/_data/` so it is easier to update. These are `.ts` files, not separate `.json` files.
 
 ## Fonts and icons
 
@@ -74,7 +74,7 @@ I moved the content for several sections into separate files in `app/_data/`. Th
 - **`app/_data/ourPlans.ts`** — plan names, prices, billing details, and feature lists used by `OurPlans.tsx` and `PlanCard.tsx`.
 - **`app/_data/recruitmentHub.ts`** — content for the Recruiter Hub and Talent Discovery cards used by `RecruitmentHub.tsx`.
 - **`app/_data/revealConsent.ts`** — icons, headings, and descriptions used by `RevealConsent.tsx`.
-- **`app/_data/targetedAssesments.ts`** — the campaign steps used by `BannerTargetedAssessments.tsx` and the evidence details used by `BannerEvidence.tsx`. The file name is spelled `targetedAssesments.ts` in the project.
+- **`app/_data/targetedAssessments.ts`** — the campaign steps used by `BannerTargetedAssessments.tsx` and the evidence details used by `BannerEvidence.tsx`. The file name is spelled `targetedAssessments.ts` in the project.
 
 Some content is still written directly in its component, including the CV statistics in `CVLieBanner.tsx` and the feature list in `BannerEveryCandidate.tsx`. The FAQ answers currently contain placeholder text, so they should be replaced with the final answers in `app/_data/faqs.ts`.
 
@@ -82,7 +82,7 @@ Some content is still written directly in its component, including the CV statis
 
 - **Next.js** with the App Router
 - **React** and **TypeScript**
-- **Tailwind CSS** for layout, responsive styling, and theme colours
+- **Tailwind CSS** for layout, responsive styling, and theme colors
 - **React Context API** for the Banner compound component
 - **React Icons** for icons
 - **Next.js Fonts, Image, and Link** for fonts, images, and navigation
