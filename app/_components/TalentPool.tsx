@@ -1,6 +1,9 @@
 import { FaCircle } from "react-icons/fa6";
+import BannerTargetedAssessments from "./BannerTargetedAssessments";
 import RecruitmentHub from "./RecruitmentHub";
-import TargetedAssessments from "./TargetedAssessments";
+import BannerEvidence from "./BannerEvidence";
+import BannerGoBeyond from "./BannerGoBeyond";
+import BannerEveryCandidate from "./BannerEveryCandidate";
 
 export default function TalentPool() {
   return (
@@ -22,7 +25,10 @@ export default function TalentPool() {
       </div>
 
       <RecruitmentHub />
-      <TargetedAssessments />
+      <BannerTargetedAssessments />
+      <BannerEvidence />
+      <BannerGoBeyond />
+      <BannerEveryCandidate />
     </section>
   );
 }
