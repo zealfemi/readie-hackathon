@@ -2,7 +2,6 @@ import Image from "next/image";
 import { Banner, BannerContent, BannerImage } from "./Banner";
 import CardDetailedList, { detailedListType } from "./CardDetailedList";
 import CardDetailedListHeader from "./CardDetailedListHeader";
-import CardImageWithText from "./CardImageWithText";
 
 const evidenceData: detailedListType[] = [
   {

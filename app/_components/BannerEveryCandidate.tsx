@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { Banner, BannerContent, BannerImage } from "./Banner";
-import CardDetailedListHeader from "./CardDetailedListHeader";
 import CardSimpleList from "./CardSimpleList";
 
 const everyCandidateList: string[] = [
