@@ -8,12 +8,15 @@ A clean, responsive, and component-driven web application built with Next.js, Ty
 
 - **Framework:** Next.js (App Router)
 - **Styling:** Tailwind CSS
-- **AI Assistance:** Gemini was used to generate a custom Tailwind theme—specifically the color palette for the text and backgrounds—ensuring a cohesive and modern look. Gemini was also utilized to draft and structure the JSON data that populates several components across the app.
+- **AI Assistance:** Gemini was used to generate a custom Tailwind theme, specifically the color palette for the text and backgrounds, ensuring a cohesive and modern look. Gemini was also utilized to draft and structure the JSON data that populates several components across the app.
 
-I used Gemini to help with the design colors and content:
+I used Gemini to help with the design and development:
 
 - **Tailwind theme:** Gemini helped create the color theme used for text, backgrounds, accents, and borders. The theme colors are defined in `app/globals.css`.
-- **Data files:** Gemini also helped draft and organize content for some sections. I moved that content into typed TypeScript arrays and objects in `app/_data/` so it is easier to update. These are `.ts` files, not separate `.json` files.
+- **Content data:** Gemini helped draft and organize content for some sections. I moved this content into typed TypeScript arrays and objects in `app/_data/` so it is easier to update. These are `.ts` files, not separate `.json` files.
+- **Fixing errors:** I also used Gemini to help me understand and fix some errors I ran into while building the app. I reviewed the suggestions and applied the fixes that worked for my code.
+
+I spent roughly **48 hours** designing and building this project. For the mobile navigation, I used the mobile navigation on the main **Readie** website as a reference for my own design.
 
 ## Fonts and icons
 
@@ -31,7 +34,9 @@ I split the page into smaller components so each one has a clear job.
 
 ### 1. Banner compound component and Context API
 
-I built a reusable compound component in `app/_components/Banner.tsx`. It uses the **React Context API** to share layout settings, such as the image width and content width, with its child components. This lets each banner use the same layout while choosing how much space the image and text should take.
+I built a reusable compound component in `app/_components/Banner.tsx`. I chose this pattern because several sections share the same banner design, but place their images and content in different positions. Instead of making a separate layout for every banner, I can reuse the same main component and arrange its child components to fit each section.
+
+The **React Context API** lets the parent `Banner` share layout settings, such as image width and content width, with its child components. As long as a child is placed inside the Banner provider, I can put `Banner.Image` and `Banner.Content` where they are needed while keeping the same shared layout rules. This makes the banners easier to reuse and change.
 
 The compound Banner is used by these sections:
 
