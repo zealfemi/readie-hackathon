@@ -1,9 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { HiPlus } from "react-icons/hi2";
-import Faq from "./Faq";
 import Button from "./Button";
+import Faq from "./Faq";
 
 export type faqType = {
   question: string;

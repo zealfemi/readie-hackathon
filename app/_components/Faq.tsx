@@ -1,6 +1,5 @@
-import { FaMinus, FaPlus } from "react-icons/fa6";
-import { faqType } from "./FAQs";
 import { HiMinus, HiPlus } from "react-icons/hi2";
+import { faqType } from "./FAQs";
 
 export default function Faq({
   faq,
