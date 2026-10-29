@@ -1,6 +1,6 @@
 # Readie Platform UI
 
-A clean, responsive, and component-driven web application built with Next.js and styled with Tailwind CSS. This project focuses on a modular architecture, making it easy to scale and maintain as new features are added.
+A clean, responsive, and component-driven web application built with Next.js, Typescript and styled with Tailwind CSS. This project focuses on a modular architecture, making it easy to scale and maintain as new features are added.
 
 🔗 **Live Preview:** <https://readie-hackathon.vercel.app>
 
