@@ -46,7 +46,7 @@ export function BannerContent({ children }: PropsWithChildren) {
   const { contentWidth } = useBannerContext();
   return (
     <div
-      className={`bg-primary-600 w-full ${contentWidth} py-10 px-4 lg:px-10 flex flex-col justify-center text-left gap-5 border-border lg:first:border-r lg:not-first:border-r-0`}>
+      className={`bg-primary-600 w-full ${contentWidth} py-10 px-4 lg:px-10 flex flex-col justify-center items-center text-left gap-5 border-border lg:first:border-r lg:not-first:border-r-0`}>
       {children}
     </div>
   );
