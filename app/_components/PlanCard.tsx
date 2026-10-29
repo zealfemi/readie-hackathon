@@ -1,14 +1,21 @@
+"use client";
+
 import { GoVerified } from "react-icons/go";
 import { HiPhone } from "react-icons/hi2";
 import { planType } from "../_data/ourPlans";
+import { useState } from "react";
 
 export default function PlanCard({
   plan,
   planIndex,
+  planBilling,
 }: {
   plan: planType;
   planIndex: number;
+  planBilling: "monthly" | "annually";
 }) {
+  const [annualBilling, setAnnualBilling] = useState(false);
+
   return (
     <div
       className={`${planIndex === 0 && "plan-1"} ${planIndex === 1 && "plan-2"} ${planIndex === 2 && "plan-3 text-primary-200"} ${planIndex === 3 && "plan-4 text-[#00000099]"}`}>
@@ -31,23 +38,41 @@ export default function PlanCard({
           <p>
             <span
               className={`text-[27px] font-semibold ${planIndex !== 3 && "text-primary-200"}`}>
-              {plan.price}
+              {planBilling === "monthly" ? plan.price : plan.annualPrice}
             </span>
-            {plan.billing}
+            {planBilling === "monthly" &&
+              plan.price !== "" &&
+              plan.price !== "Free" &&
+              "/per Month"}
+
+            {planBilling === "annually" &&
+              plan.price !== "" &&
+              plan.price !== "Free" &&
+              "/per Year"}
           </p>
         )}
-        {plan.recommended && (
+        {plan.recommended && planBilling === "monthly" && (
           <>
             <p>or {plan.annualBilling}</p>
-            <div className="flex gap-2 items-center">
-              <button className="w-10 h-5 bg-primary-100 border-border border relative rounded-full p-0.5 flex justify-start items-center cursor-pointer">
-                <div className="w-4 h-4 rounded-full bg-primary-200"></div>
+            <div>
+              <button
+                type="button"
+                aria-label="Toggle setting"
+                aria-checked={annualBilling}
+                role="switch"
+                onClick={() => setAnnualBilling(!annualBilling)}
+                className="flex gap-2 items-center">
+                <div
+                  className={`w-10 h-5 bg-primary-100 border-border border relative rounded-full p-0.5 flex ${annualBilling ? "justify-end bg-primary-400" : "justify-start"} items-center cursor-pointer transition-all duration-350 ease-in-out`}>
+                  <div className="w-4 h-4 rounded-full bg-primary-200 transition-all duration-350 ease-in-out"></div>
+                </div>
+                <p>Annual Billing</p>
               </button>
-              <p>Annual Billing</p>
             </div>
           </>
         )}
       </div>
+
       <div
         className={`p-4 lg:p-6 border-t ${planIndex === 0 && 1 && "border-border"} ${planIndex === 2 && "border-primary-300"} ${planIndex === 3 && "border-[#3B3B4F]"}`}>
         <div className="flex flex-col gap-6">
