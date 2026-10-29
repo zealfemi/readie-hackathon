@@ -49,10 +49,10 @@ const footerLinks: linkType[] = [
 export default function Footer() {
   return (
     <footer className="border-border border-t px-4 py-7 lg:py-15 lg:px-25">
-      <div className="flex flex-col lg:flex-row gap-5 lg:gap-10">
+      <div className="flex flex-col lg:flex-row gap-8 lg:gap-10">
         <div className="lg:w-1/5">
           <div className="flex flex-col gap-6">
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-3">
               <p className="text-sm text-primary-200">
                 Subscribe to our newsletter
               </p>
@@ -79,7 +79,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="lg:w-4/5 grid grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-10">
+        <div className="lg:w-4/5 grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
           {footerLinks.map((linkGroup: linkType, index) => (
             <div key={index} className="flex flex-col gap-4">
               <p className="font-medium font-inter-tight text-primary-200">
@@ -99,7 +99,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="mt-4 lg:mt-2 flex w-full flex-col lg:flex-row text-center items-center lg:items-end gap-3">
+      <div className="mt-10 lg:mt-8 flex w-full flex-col lg:flex-row text-center items-center lg:items-end gap-3">
         <Link href="/">
           <Image src={logo} alt="footer logo" />
         </Link>
