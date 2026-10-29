@@ -58,7 +58,7 @@ export default function Footer() {
               </p>
               <input
                 placeholder="Enter your email"
-                className="py-2 px-4 bg-primary-500 border-border border rounded-[10px] w-full text-primary-200"
+                className="py-2 px-4 bg-primary-500 border-border border rounded-[10px] w-full text-primary-200 text-[16px]"
               />
             </div>
             <Button color="text-primary-200 bg-primary-400">Subscribe</Button>
