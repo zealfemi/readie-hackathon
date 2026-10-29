@@ -58,7 +58,7 @@ export default function Footer() {
               </p>
               <input
                 placeholder="Enter your email"
-                className="py-2 px-4 bg-primary-500 border-border border rounded-[10px] w-full text-primary-200 text-[16px]"
+                className="py-2 px-4 bg-primary-500 border-border border rounded-[10px] w-full text-primary-200 text-base"
               />
             </div>
             <Button color="text-primary-200 bg-primary-400">Subscribe</Button>
@@ -82,7 +82,7 @@ export default function Footer() {
         <div className="lg:w-4/5 grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
           {footerLinks.map((linkGroup: linkType, index) => (
             <div key={index} className="flex flex-col gap-4">
-              <p className="font-medium font-inter-tight text-primary-200">
+              <p className="font-medium font-inter-tight text-base text-primary-200">
                 {linkGroup.category}
               </p>
               <ul className="flex flex-col gap-2">
