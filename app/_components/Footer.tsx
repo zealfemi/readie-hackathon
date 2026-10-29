@@ -88,7 +88,7 @@ export default function Footer() {
               <ul className="flex flex-col gap-2">
                 {linkGroup.links.map((item: string, itemIdx) => (
                   <li key={itemIdx}>
-                    <Link href="#" className="hover:underline">
+                    <Link href="#" className="font-inter-tight hover:underline">
                       {item}
                     </Link>
                   </li>
