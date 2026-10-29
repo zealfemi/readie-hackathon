@@ -4,6 +4,7 @@ import RecruitmentHub from "./RecruitmentHub";
 import BannerEvidence from "./BannerEvidence";
 import BannerGoBeyond from "./BannerGoBeyond";
 import BannerEveryCandidate from "./BannerEveryCandidate";
+import RevealConsent from "./RevealConsent";
 
 export default function TalentPool() {
   return (
@@ -29,6 +30,7 @@ export default function TalentPool() {
       <BannerEvidence />
       <BannerGoBeyond />
       <BannerEveryCandidate />
+      <RevealConsent />
     </section>
   );
 }

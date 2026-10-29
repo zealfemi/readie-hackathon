@@ -7,10 +7,14 @@ import CardSimpleList from "./CardSimpleList";
 
 export default function RecruitmentHub() {
   return (
-    <div className="grid lg:grid-cols-2">
+    <div className="grid grid-cols-1 lg:grid-cols-2">
       {recruitmentHubData.map((data: recruitmentHubDataType, index) => (
-        <div key={index} className="border-border first:lg:border-r">
-          <div className="border-border border-t">
+        // Added 'flex flex-col' here so cards stretch evenly in the grid
+        <div
+          key={index}
+          className="border-border first:lg:border-r flex flex-col">
+          {/* Added 'flex flex-col flex-1' to handle inner height distribution */}
+          <div className="border-border border-t flex flex-col flex-1">
             <div className="bg-primary-500 px-4 py-5 lg:px-5">
               <CardImageWithText
                 cardImage={data.image}
@@ -21,7 +25,8 @@ export default function RecruitmentHub() {
               />
             </div>
 
-            <div className="bg-primary-600 border-border border-t py-7 px-4 lg:px-14 lg:py-10 flex flex-col gap-3">
+            {/* Changed 'h-full' to 'flex-1 flex flex-col justify-between' */}
+            <div className="bg-primary-600 border-border border-t py-7 px-4 lg:px-14 lg:py-10 flex flex-col flex-1 justify-between gap-3">
               <CardSimpleList
                 heading={data.heading}
                 description={data.content}

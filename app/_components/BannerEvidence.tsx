@@ -27,7 +27,7 @@ const evidenceData: detailedListType[] = [
 
 export default function BannerEvidence() {
   return (
-    <div>
+    <div className="border-border border-t">
       <Banner imageWidth="lg:w-5/9" contentWidth="lg:w-4/9">
         <BannerImage>
           <div className="flex items-center justify-center h-full w-full relative min-h-70 md:h-120 lg:h-90">
