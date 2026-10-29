@@ -99,3 +99,11 @@ body {
   mix-blend-mode: lighten;
   border-radius: 22px;
 }
+
+.recommended-btn {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow:
+    0px 1px 3px rgba(0, 0, 0, 0.15),
+    inset 0px 1px 4px rgba(255, 255, 255, 0.25);
+  border-radius: 21px;
+}
