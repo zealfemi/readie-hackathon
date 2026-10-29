@@ -37,9 +37,6 @@ export default function Loading() {
           <div className="absolute inset-0 rounded-full border-4 border-primary-400 border-t-transparent motion-safe:animate-spin" />
         </div>
 
-        {/* <p className="text-sm font-medium text-primary-200 tracking-wider animate-pulse">
-          Loading...
-        </p> */}
         <span className="sr-only">Loading, please wait...</span>
       </div>
     </div>

@@ -6,7 +6,6 @@ import OurPlans from "./_components/OurPlans";
 import TalentPool from "./_components/TalentPool";
 
 export default function Home() {
-  // throw new Error("testing");
   return (
     <>
       <Hero />
