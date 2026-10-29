@@ -14,7 +14,7 @@ export default function CardSimpleList({
   return (
     <div className="flex flex-col gap-3 h-full">
       {heading && (
-        <h4 className="text-primary-200 capitalize text-lg lg:text-[20px]">
+        <h4 className="text-primary-200 capitalize text-lg lg:text-[20px] leading-tight">
           {heading}
         </h4>
       )}

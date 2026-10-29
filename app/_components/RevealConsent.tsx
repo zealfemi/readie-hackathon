@@ -10,7 +10,7 @@ export default function RevealConsent() {
 
       <div>
         <div className="max-w-155 flex flex-col gap-5">
-          <h3 className="text-primary-200 text-[28px] lg:text-[46px] font-semibold">
+          <h3 className="text-primary-200 text-[28px] lg:text-[46px] font-semibold leading-tight">
             Every reveal. Consent-logged. Audit-ready.
           </h3>
           <p className="">

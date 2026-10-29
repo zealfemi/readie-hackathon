@@ -14,7 +14,7 @@ export default function BannerEveryCandidate() {
       <Banner imageWidth="lg:w-5/9" contentWidth="lg:w-4/9">
         <BannerContent>
           <div className="flex flex-col gap-5">
-            <h3 className="text-[28px] lg:text-[46px] font-semibold">
+            <h3 className="text-[28px] lg:text-[46px] font-semibold leading-tight">
               <span className="text-primary-200">Every candidate.</span> In one
               place.
             </h3>

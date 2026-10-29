@@ -27,7 +27,7 @@ export default function CVLieBanner() {
   return (
     <section className="radial-bg px-4 md:px-7 lg:px-14 py-25">
       <div className="text-center flex flex-col items-center justify-center gap-5">
-        <h2 className="text-3xl lg:text-[58px] font-semibold">
+        <h2 className="text-3xl lg:text-[58px] font-semibold leading-tight">
           <span className="text-primary-200">CVs lie.</span> Interviews miss it.
         </h2>
         <p className="max-w-160">

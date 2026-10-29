@@ -15,8 +15,9 @@ export default function BannerNextHire() {
 
       <div className="absolute inset-0 flex items-center justify-center text-center px-4 sm:px-6 md:px-8 lg:px-14 py-12 md:py-20">
         <div className="flex flex-col items-center justify-center gap-5 max-w-xl w-full">
-          <h2 className="text-[28px] lg:text-[46px] font-semibold text-primary-200">
-            Your next hire deserves the truth.
+          <h2 className="text-[28px] lg:text-[46px] font-semibold text-primary-200 capitalize leading-tight">
+            Your next hire <br />
+            deserves the truth.
           </h2>
           <p>
             Ready to remove the blind spots from your hiring process? Start a

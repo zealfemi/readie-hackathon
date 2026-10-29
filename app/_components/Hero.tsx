@@ -13,7 +13,7 @@ export default function Hero() {
     <section>
       <div className="grid lg:grid-cols-2">
         <div className="px-4 py-10 md:px-7 lg:p-14 flex flex-col gap-5 h-full items-center justify-center border-b lg:border-r lg:border-b-0 border-border bg-primary-600">
-          <h1 className="text-primary-200 text-left font-semibold text-3xl md:text-4xl lg:text-6xl">
+          <h1 className="text-primary-200 text-left font-semibold text-3xl md:text-4xl lg:text-6xl leading-tight">
             Find talent. See the evidence.{" "}
             <span className="text-primary-400">Hire with confidence.</span>
           </h1>

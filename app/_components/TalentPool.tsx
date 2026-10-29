@@ -13,7 +13,7 @@ export default function TalentPool() {
         <p className="text-primary-300 text-sm flex items-center justify-center gap-1.5">
           <FaCircle size={6} /> Two ways to find talent
         </p>
-        <h3 className="text-[28px] lg:text-[46px] font-semibold">
+        <h3 className="text-[28px] lg:text-[46px] font-semibold leading-tight">
           <span className="text-primary-200">A broader talent pool.</span> More
           of the right people.
         </h3>

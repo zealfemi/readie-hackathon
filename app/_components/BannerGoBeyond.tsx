@@ -41,7 +41,7 @@ export default function BannerGoBeyond() {
   return (
     <div>
       <div className="bg-primary-600 px-4 lg:px-14 py-10 lg:py-25 border-border border-t">
-        <h4 className="text-primary-200 text-[28px] lg:text-[46px] font-semibold">
+        <h4 className="text-primary-200 text-[28px] lg:text-[46px] font-semibold leading-tight">
           Go beyond what candidates say.
         </h4>
 

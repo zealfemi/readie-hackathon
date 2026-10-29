@@ -7,7 +7,7 @@ export default function CardDetailedListHeader({
 }) {
   return (
     <>
-      <h4 className="text-primary-200 text-[28px] lg:text-[46px] font-semibold">
+      <h4 className="text-primary-200 text-[28px] lg:text-[46px] font-semibold leading-tight">
         {heading}
       </h4>
       <p className="border-border border-b pb-5">{description}</p>
