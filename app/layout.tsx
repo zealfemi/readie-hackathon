@@ -31,7 +31,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${inter.variable} ${jetBrainsMono.variable} ${interTight.variable} h-full antialiased`}>
       <body className="min-h-full max-w-[2000px] mx-auto flex flex-col text-sm md:text-base">
         <Header />
-        <main className="flex-1 lg:mx-30">{children}</main>
+        <main className="flex-1 lg:mx-30 motion-safe:animate-fade-in motion-safe:transition-all">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

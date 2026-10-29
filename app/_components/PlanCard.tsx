@@ -1,6 +1,6 @@
 import { GoVerified } from "react-icons/go";
 import { HiPhone } from "react-icons/hi2";
-import { planType } from "./OurPlans";
+import { planType } from "../_data/ourPlans";
 
 export default function PlanCard({
   plan,

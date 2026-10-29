@@ -1,5 +1,5 @@
 import { HiMinus, HiPlus } from "react-icons/hi2";
-import { faqType } from "./FAQs";
+import { faqType } from "../_data/faqs";
 
 export default function Faq({
   faq,

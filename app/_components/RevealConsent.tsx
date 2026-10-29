@@ -1,7 +1,6 @@
 import arcs from "@/public/images/arcs.svg";
 import Image from "next/image";
-import { HiLockClosed, HiOutlineHome } from "react-icons/hi2";
-import { MdOutlineVerifiedUser } from "react-icons/md";
+import { revealConsentData, revealDataType } from "../_data/revealConsent";
 
 export default function RevealConsent() {
   return (
@@ -23,46 +22,19 @@ export default function RevealConsent() {
         </div>
 
         <div className="mt-10 lg:mt-16.5 grid lg:grid-cols-3">
-          <div className="flex flex-col gap-5 py-7 border-border border-t lg:px-7">
-            <HiLockClosed size={24} className="text-primary-200" />
-            <div className="flex flex-col gap-2">
-              <h4 className="font-medium text-primary-200 text-[16.5px]">
-                Every reveal consent-logged
-              </h4>
-              <p className="text-sm">
-                Passport access, Mastery Report release and every contact reveal
-                are timestamped and recorded. Readie members approve access
-                first
-              </p>
+          {revealConsentData.map((item: revealDataType, index) => (
+            <div
+              key={index}
+              className="flex flex-col gap-5 py-7 border-border border-t lg:px-7">
+              <item.icon size={24} className="text-primary-200" />
+              <div className="flex flex-col gap-2">
+                <h4 className="font-medium text-primary-200 text-[16.5px]">
+                  {item.heading}
+                </h4>
+                <p className="text-sm">{item.description}</p>
+              </div>
             </div>
-          </div>
-
-          <div className="flex flex-col gap-5 py-7 border-border border-t lg:border-l lg:px-7">
-            <MdOutlineVerifiedUser size={24} className="text-primary-200" />
-            <div className="flex flex-col gap-2">
-              <h4 className="font-medium text-primary-200 text-[16.5px]">
-                Every reveal consent-logged
-              </h4>
-              <p className="text-sm">
-                Passport access, Mastery Report release and every contact reveal
-                are timestamped and recorded. Readie members approve access
-                first
-              </p>
-            </div>
-          </div>
-          <div className="flex flex-col gap-5 pt-7 border-border border-t lg:border-l lg:px-7">
-            <HiOutlineHome size={24} className="text-primary-200" />
-            <div className="flex flex-col gap-2">
-              <h4 className="font-medium text-primary-200 text-[16.5px]">
-                Every reveal consent-logged
-              </h4>
-              <p className="text-sm">
-                Passport access, Mastery Report release and every contact reveal
-                are timestamped and recorded. Readie members approve access
-                first
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>

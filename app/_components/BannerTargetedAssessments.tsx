@@ -1,28 +1,8 @@
+import { targetedAssessmentsList } from "../_data/targetedAssesments";
 import { Banner, BannerContent, BannerImage } from "./Banner";
 import CardDetailedList, { detailedListType } from "./CardDetailedList";
 import CardDetailedListHeader from "./CardDetailedListHeader";
 import CardImageWithText from "./CardImageWithText";
-
-const targetedAssessmentsList: detailedListType[] = [
-  {
-    step: "01",
-    heading: "Create a campaign",
-    description:
-      "Set the role, the key skills and the maturity level you need.",
-  },
-  {
-    step: "02",
-    heading: "Invite candidates",
-    description:
-      "Send invites from your shortlists, or share one Campaign link. Candidates don't need an account.",
-  },
-  {
-    step: "03",
-    heading: "Review results",
-    description:
-      "Proficiency for each skill against your level, the session recording and suggested focus areas for interview.",
-  },
-];
 
 export default function BannerTargetedAssessments() {
   return (
