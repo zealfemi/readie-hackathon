@@ -78,7 +78,7 @@ export default function PlanCard({
               {plan.disabledFeatures.map((feature: string) => (
                 <div
                   key={feature}
-                  className="text-xs md:text-sm flex gap-2  items-center opacity-50">
+                  className="text-xs md:text-sm flex gap-2  items-center opacity-70">
                   <GoVerified size={16} className="shrink-0" />
                   <p>{feature}</p>
                 </div>
