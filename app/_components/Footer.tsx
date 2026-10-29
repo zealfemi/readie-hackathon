@@ -51,9 +51,9 @@ export default function Footer() {
     <footer className="border-border border-t px-4 py-7 lg:py-15 lg:px-25">
       <div className="flex flex-col lg:flex-row gap-5 lg:gap-10">
         <div className="lg:w-1/5">
-          <div className="flex flex-col gap-6 items-center text-center lg:text-left lg:items-start">
+          <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-4">
-              <p className="text-xs md:text-sm text-primary-200">
+              <p className="text-sm text-primary-200">
                 Subscribe to our newsletter
               </p>
               <input
