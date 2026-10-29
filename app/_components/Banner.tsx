@@ -25,7 +25,7 @@ export function Banner({
 }: PropsWithChildren<bannerType>) {
   return (
     <BannerContext.Provider value={{ imageWidth, contentWidth }}>
-      <div className="border-border border-t flex flex-col lg:flex-row w-full lg:min-h-125">
+      <div className="flex flex-col lg:flex-row w-full lg:min-h-125">
         {children}
       </div>
     </BannerContext.Provider>
@@ -36,7 +36,7 @@ export function BannerImage({ children }: PropsWithChildren) {
   const { imageWidth } = useBannerContext();
   return (
     <div
-      className={`bg-primary-500 p-4 lg:p-10 ${imageWidth} flex flex-col items-center justify-center border-border lg:first:border-r lg:not-first:border-r-0`}>
+      className={`bg-primary-500 p-4 lg:p-10 ${imageWidth} flex flex-col items-center justify-center border-border border-t lg:first:border-r lg:not-first:border-r-0`}>
       {children}
     </div>
   );
@@ -46,7 +46,7 @@ export function BannerContent({ children }: PropsWithChildren) {
   const { contentWidth } = useBannerContext();
   return (
     <div
-      className={`bg-primary-600 w-full ${contentWidth} py-10 px-4 lg:px-10 flex flex-col justify-center items-center text-left gap-5 border-border lg:first:border-r lg:not-first:border-r-0`}>
+      className={`bg-primary-600 w-full ${contentWidth} py-10 px-4 lg:px-10 flex flex-col justify-center items-center text-left gap-5 border-border border-t lg:first:border-r lg:not-first:border-r-0`}>
       {children}
     </div>
   );
