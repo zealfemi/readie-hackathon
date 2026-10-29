@@ -3,6 +3,7 @@ import { Inter, Inter_Tight, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./_components/Header";
 import Footer from "./_components/Footer";
+import Loading from "./_components/Loading";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -30,6 +31,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${inter.variable} ${jetBrainsMono.variable} ${interTight.variable} h-full antialiased`}>
       <body className="min-h-full max-w-[2000px] mx-auto flex flex-col text-sm md:text-base">
+        <Loading />
         <Header />
         <main className="flex-1 lg:mx-30 motion-safe:animate-fade-in motion-safe:transition-all">
           {children}
