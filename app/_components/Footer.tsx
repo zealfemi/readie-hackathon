@@ -82,7 +82,7 @@ export default function Footer() {
         <div className="lg:w-4/5 grid grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-10">
           {footerLinks.map((linkGroup: linkType, index) => (
             <div key={index} className="flex flex-col gap-4">
-              <p className="font-medium text-primary-200">
+              <p className="font-medium font-inter-tight text-primary-200">
                 {linkGroup.category}
               </p>
               <ul className="flex flex-col gap-2">
@@ -103,11 +103,13 @@ export default function Footer() {
         <Link href="/">
           <Image src={logo} alt="footer logo" />
         </Link>
-        <p className="flex-1 text-xs">
+        <p className="flex-1 text-xs font-inter-tight">
           Readie empowers individuals and organisations to thrive in an AI-first
           world.
         </p>
-        <p className="text-xs">© 2026 Readie. All rights reserved.</p>
+        <p className="text-xs font-inter-tight">
+          © 2026 Readie. All rights reserved.
+        </p>
       </div>
     </footer>
   );

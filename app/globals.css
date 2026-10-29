@@ -22,6 +22,7 @@
   --color-foreground: var(--foreground);
   --font-inter: var(--font-inter);
   --font-jetbrains: var(--font-jetBrainsMono);
+  --font-inter-tight: car(--font-interTight);
 }
 
 body {
