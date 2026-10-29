@@ -15,7 +15,7 @@ export default function Faq({
       className={`border-border border-b transition-all duration-300 ease-in-out`}>
       <div className="w-full">
         <button
-          className="flex w-full justify-between items-center gap-3 py-5 text-left text-primary-200"
+          className="flex w-full justify-between items-center gap-3 py-5 text-left text-primary-200 hover:cursor-pointer"
           onClick={onClick}>
           <p>{faq.question}</p>
           {!isOpen ? (

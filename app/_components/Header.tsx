@@ -31,18 +31,28 @@ export default function Header() {
           </div>
 
           <nav className="hidden flex-1 lg:flex justify-center items-center gap-5 text-white w-full">
-            <Link href="/" className="flex items-center gap-1.75">
+            <Link
+              href="#"
+              className="flex items-center gap-1.75 hover:underline">
               For Individuals <SlArrowDown size={14} />
             </Link>
-            <Link href="/">For Organizations</Link>
-            <Link href="/">Pricing</Link>
-            <Link href="/">Our Story</Link>
+            <Link href="#" className="hover:underline">
+              For Organizations
+            </Link>
+            <Link href="#" className="hover:underline">
+              Pricing
+            </Link>
+            <Link href="#" className="hover:underline">
+              Our Story
+            </Link>
           </nav>
 
           <div className="place-items-end hidden lg:block">
             <div className="flex gap-4 items-center justify-end w-fit font-medium">
-              <Link href="">Log In</Link>
-              <Button link="/" color="bg-primary-400">
+              <Link href="#" className="hover:underline">
+                Log In
+              </Link>
+              <Button link="#" color="bg-primary-400">
                 Sign Up
               </Button>
             </div>
@@ -66,25 +76,37 @@ export default function Header() {
 
           <nav className="mt-10 flex flex-col gap-6 text-white text-center w-full font-light capitalize">
             <Link
-              href="/"
+              href="#"
               onClick={() => setShowMenu(false)}
-              className="flex items-center justify-center gap-1.75">
+              className="flex items-center justify-center gap-1.75 hover:underline">
               For Individuals <SlArrowDown size={12} />
             </Link>
-            <Link href="/" onClick={() => setShowMenu(false)}>
+            <Link
+              href="#"
+              className="hover:underline"
+              onClick={() => setShowMenu(false)}>
               For Organizations
             </Link>
-            <Link href="/" onClick={() => setShowMenu(false)}>
+            <Link
+              href="#"
+              className="hover:underline"
+              onClick={() => setShowMenu(false)}>
               Pricing
             </Link>
-            <Link href="/" onClick={() => setShowMenu(false)}>
+            <Link
+              href="#"
+              className="hover:underline"
+              onClick={() => setShowMenu(false)}>
               Our Story
             </Link>
 
-            <Link href="" onClick={() => setShowMenu(false)}>
+            <Link
+              href="#"
+              className="hover:underline"
+              onClick={() => setShowMenu(false)}>
               Log In
             </Link>
-            <Button link="/" color="bg-primary-400">
+            <Button link="#" color="bg-primary-400">
               Sign Up
             </Button>
           </nav>
