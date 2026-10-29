@@ -20,20 +20,22 @@ export default function PlanCard({
               {plan.name}
             </span>
             {plan.recommended && (
-              <button className="p-2 recommended-btn text-xs">
+              <button className="p-2 recommended-btn text-xs text-primary-200">
                 Recommended
               </button>
             )}
           </p>
           <p>{plan.subtitle}</p>
         </div>
-        <p>
-          <span
-            className={`text-[27px] font-semibold ${planIndex !== 3 && "text-primary-200"}`}>
-            {plan.price}
-          </span>
-          {plan.billing}
-        </p>
+        {plan.price && (
+          <p>
+            <span
+              className={`text-[27px] font-semibold ${planIndex !== 3 && "text-primary-200"}`}>
+              {plan.price}
+            </span>
+            {plan.billing}
+          </p>
+        )}
         {plan.recommended && (
           <>
             <p>or {plan.annualBilling}</p>
