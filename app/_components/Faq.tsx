@@ -1,6 +1,6 @@
 import { FaMinus, FaPlus } from "react-icons/fa6";
 import { faqType } from "./FAQs";
-import { HiPlus } from "react-icons/hi2";
+import { HiMinus, HiPlus } from "react-icons/hi2";
 
 export default function Faq({
   faq,
@@ -19,7 +19,11 @@ export default function Faq({
           className="flex w-full justify-between items-center gap-3 py-5 text-left"
           onClick={onClick}>
           <p>{faq.question}</p>
-          <HiPlus size={16} className="text-primary-300" />
+          {!isOpen ? (
+            <HiPlus size={16} className="text-primary-300" />
+          ) : (
+            <HiMinus size={16} className="text-primary-300" />
+          )}
         </button>
 
         <div
