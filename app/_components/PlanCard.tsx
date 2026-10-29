@@ -52,7 +52,7 @@ export default function PlanCard({
         className={`p-4 lg:p-6 border-t ${planIndex === 0 && 1 && "border-border"} ${planIndex === 2 && "border-primary-300"} ${planIndex === 3 && "border-[#3B3B4F]"}`}>
         <div className="flex flex-col gap-6">
           <button
-            className={`w-full btn py-2.5 px-5 cursor-pointer flex gap-1 items-center justify-center text-sm lg:text-base hover:opacity-50 ${planIndex === 0 && "bg-[#3B3B4F] text-primary-200"} ${planIndex === 1 && "bg-primary-400 text-primary-200"} ${planIndex === 2 && "bg-primary-200 text-primary-800"} ${planIndex === 3 && "bg-[#FFFFFF70] text-primary-800"}`}>
+            className={`w-full btn py-2.5 px-5 cursor-pointer flex gap-1 items-center justify-center text-sm lg:text-base hover:opacity-50 ${planIndex === 0 && "bg-[#3B3B4F] text-primary-200"} ${planIndex === 1 && "bg-primary-400 text-primary-200"} ${planIndex === 2 && "bg-primary-200 text-primary-800"} ${planIndex === 3 && "bg-[#FFFFFF70] text-primary-800 backdrop-blur-lg"}`}>
             {planIndex === 3 && <HiPhone />}
             {plan.buttonText}
           </button>
