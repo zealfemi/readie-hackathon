@@ -15,7 +15,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-primary-800 w-full">
       <div className="relative text-base font-light">
-        <div className="flex justify-between items-center border-b border-border p-4 lg:px-25 text-white">
+        <div className="flex justify-between items-center border-b border-border px-4 py-6 lg:px-25 text-white">
           <span>
             <Link href="/">
               <Image src={logo} alt="header logo" priority />
