@@ -5,7 +5,7 @@ import { HiArrowRight } from "react-icons/hi2";
 
 export default function BannerNextHire() {
   return (
-    <div className="relative w-full overflow-hidden">
+    <div className="relative w-full overflow-hidden border-border border-t">
       <Image
         src={bg}
         alt="next hire"
